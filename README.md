@@ -1,0 +1,1 @@
+Aplicação Calculadora Simples - (pode apresentar alguns resultados decimais matematicamente imprecisos, pois nem todos valores decimais são representáveis exatamente em binário)

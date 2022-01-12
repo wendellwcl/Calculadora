@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body onload="zerarOnload()">
+        
+        <div id="calculadora">
+            <input type="text" id="display" placeholder="0" disabled>
+            <button id="clear" onclick="calcular('funcao', 'c')">C</button>
+            <button id="dividir" onclick="calcular('funcao', '/')">/</button>
+            <button id="multiplicar" onclick="calcular('funcao', '*')">*</button>
+            <button id="sete" onclick="calcular('numeral', '7')">7</button>
+            <button id="oito" onclick="calcular('numeral', '8')">8</button>
+            <button id="nove" onclick="calcular('numeral', '9')">9</button>
+            <button id="mais" onclick="calcular('funcao', '+')">+</button>
+            <button id="quatro" onclick="calcular('numeral', '4')">4</button>
+            <button id="cinco" onclick="calcular('numeral', '5')">5</button>
+            <button id="seis" onclick="calcular('numeral', '6')">6</button>
+            <button id="menos" onclick="calcular('funcao', '-')">-</button>
+            <button id="um" onclick="calcular('numeral', '1')">1</button>
+            <button id="dois" onclick="calcular('numeral', '2')">2</button>
+            <button id="tres" onclick="calcular('numeral', '3')">3</button>
+            <button id="igual" onclick="calcular('funcao', '=')">=</button>
+            <button id="zero" onclick="calcular('numeral', '0')">0</button>
+            <button id="ponto" onclick="calcular('funcao', '.')">.</button>
+        </div>
+
+    </body>
+    <!-- Script -->
+    <script src="script/script.js"></script>
+</html>

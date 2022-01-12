@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap');
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191A1F;
+}
+
+#calculadora{
+    padding: 20px 10px 30px 10px;
+    background: #191A1F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px #040308, -5px -5px 5px 3px #2F3237;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:"display display display display"
+                        "clear clear dividir multiplicar"
+                        "sete oito nove mais"
+                        "quatro cinco seis menos"
+                        "um dois tres igual"
+                        "zero0 zero0 ponto igual";
+}
+
+#display{
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #F4F7F5;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #191A1F;
+    text-align: right;
+    font-size: 24px;
+    grid-area: display;
+}
+
+button{
+    min-height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #191A1F;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    color: #F4F7F5;
+    font-size: 16px;
+    box-shadow: 2px 2px 2px 1px #040308, -2px -2px 2px 1px #2F3237;
+    transition: all .1s;
+}
+
+button:active{
+    box-shadow: 0px 0px 0px 0px #040308, 0px 0px 0px 0px #2F3237;
+    transform: scale(0.95);
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#dividir{
+    grid-area: dividir;
+}
+
+#multiplicar{
+    grid-area: multiplicar;
+}
+
+#sete{
+    grid-area: sete;
+}
+
+#oito{
+    grid-area: oito;
+}
+
+#nove{
+    grid-area: nove;
+}
+
+#mais{
+    grid-area: mais;
+}
+
+#quatro{
+    grid-area: quatro;
+}
+
+#cinco{
+    grid-area: cinco;
+}
+
+#seis{
+    grid-area: seis;
+}
+
+#menos{
+    grid-area: menos;
+}
+
+#um{
+    grid-area: um;
+}
+
+#dois{
+    grid-area: dois;
+}
+
+#tres{
+    grid-area: tres;
+}
+
+#igual{
+    grid-area: igual;
+}
+
+#zero{
+    grid-area: zero0;
+}
+
+#ponto{
+    grid-area: ponto;
+}
